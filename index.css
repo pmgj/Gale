@@ -9,10 +9,11 @@ table {
 }
 
 td {
-    width: 49px;
-    height: 49px;
     border: 3px solid black;
     text-align: center;
+    --cell-size: 4vmin;
+    width: clamp(20px, var(--cell-size), 50px);
+    height: clamp(20px, var(--cell-size), 50px);
 }
 
 p {
@@ -40,8 +41,6 @@ input {
 @keyframes path {
     to {
         background-color: brown;
-        font-weight: bold;
-        font-size: 24px;
         color: white;
     }
 }
