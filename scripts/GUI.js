@@ -52,7 +52,7 @@ class GUI {
         let iStart = document.getElementById("start");
         iSize.onchange = this.init.bind(this);
         iStart.onclick = this.init.bind(this);
-        let size = parseInt(iSize.value);
+        let size = iSize.valueAsNumber;
         this.game = new Gale(size, size);
         let board = this.game.getBoard();
         this.printBoard(board);
