@@ -2,16 +2,23 @@ caption {
     text-align: center;
     font-weight: bold;
     font-size: xx-large;
+    caption-side: top;
+    color: black;
 }
 
 table {
+    border-collapse: separate;
     margin: 0 auto;
+}
+
+form {
+    width: 320px;
 }
 
 td {
     border: 3px solid black;
     text-align: center;
-    --cell-size: 4vmin;
+    --cell-size: 5vmin;
     width: clamp(20px, var(--cell-size), 50px);
     height: clamp(20px, var(--cell-size), 50px);
 }
@@ -20,8 +27,8 @@ p {
     text-align: center;
 }
 
-input {
-    width: 50px;
+input[type="number"] {
+    width: 80px;
 }
 
 .PLAYER1 {
